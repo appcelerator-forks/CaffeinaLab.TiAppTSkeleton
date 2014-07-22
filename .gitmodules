@@ -1,3 +1,15 @@
 [submodule "app/lib/T"]
 	path = app/lib/T
 	url = git@github.com:CaffeinaLab/Trimethyl.git
+[submodule "app/widgets/com.caffeinalab.titanium.tiltimageview"]
+	path = app/widgets/com.caffeinalab.titanium.tiltimageview
+	url = git@github.com:CaffeinaLab/com.caffeinalab.titanium.tiltimageview.git
+[submodule "app/widgets/com.caffeinalab.titanium.notifications"]
+	path = app/widgets/com.caffeinalab.titanium.notifications
+	url = git@github.com:CaffeinaLab/com.caffeinalab.titanium.notifications.git
+[submodule "app/widgets/com.caffeinalab.titanium.loader"]
+	path = app/widgets/com.caffeinalab.titanium.loader
+	url = git@github.com:CaffeinaLab/com.caffeinalab.titanium.loader.git
+[submodule "app/widgets/com.caffeinalab.titanium.modalwindow"]
+	path = app/widgets/com.caffeinalab.titanium.modalwindow
+	url = git@github.com:CaffeinaLab/com.caffeinalab.titanium.modalwindow.git

@@ -1,13 +1,14 @@
 var onLogin;
 
 // Global error handling
-exports.error = function(e) {
+function error(e) {
 	return T('util').alertError( (_.isObject(e) && e.message) ? e.message : e.toString() );
-};
+}
+exports.error = error;
 
 
 // Set the onLogin callback
-exports.onLogin = function(callback) {
+function onLogin(callback) {
 	if (callback !== undefined) {
 		onLogin = callback;
 	} else {
@@ -16,37 +17,42 @@ exports.onLogin = function(callback) {
 			onLogin = null;
 		}
 	}
-};
+}
+exports.onLogin = onLogin;
 
 
 // Login onto the Auth System
-exports.login = function(callback){
-	if (callback!==undefined) exports.onLogin(callback);
+function login(callback){
+	if (callback!==undefined) onLogin(callback);
 	T('flow').openDirect('signup');
-};
+}
+exports.login = login;
 
 
 // Handle the network errors based on HTTP code
-exports.handleNetworkError = function(e) {
+function handleNetworkError(e) {
 	if (e.code===401) {
-		exports.login();
+		login();
 	} else {
-		exports.error(e);
+		error(e);
 	}
-};
+}
+exports.handleNetworkError = handleNetworkError;
 
 
 // Route system based on URL
-exports.route = function(url) {
-};
+function route(url) {
+}
+exports.route  = route;
 
 
 // Start the app (route) + Tishadow
-exports.start = function() {
+function start() {
 	var initialSchema = T('util').parseSchema();
 	if (initialSchema) {
-		exports.route(initialSchema);
+		route(initialSchema);
 	} else if (ENV_DEVELOPMENT && Alloy.CFG.tishadow.route) {
-		exports.route( Alloy.CFG.tishadow.route );
+		route( Alloy.CFG.tishadow.route );
 	}
-};
+}
+exports.start = start;

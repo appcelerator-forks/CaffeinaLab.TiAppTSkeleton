@@ -17,7 +17,7 @@ var Flow = T('flow');
 var Util = T('util');
 
 // App main module
-var App = require('app');
+var App = require('myapp');
 
 // Global widgets
 var LoadWidg = Alloy.createWidget('com.caffeinalab.titanium.loader');
