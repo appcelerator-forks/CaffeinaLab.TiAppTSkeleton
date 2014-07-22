@@ -1,0 +1,3 @@
+[submodule "app/lib/T"]
+	path = app/lib/T
+	url = git@github.com:CaffeinaLab/Trimethyl.git

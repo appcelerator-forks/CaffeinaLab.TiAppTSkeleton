@@ -1,0 +1,8 @@
+<Alloy>
+	<NavigationWindow module="T/xp.ui" id="nav">
+		<Window module="T/xp.ui" id="win">
+
+
+		</Window>
+	</NavigationWindow>
+</Alloy>

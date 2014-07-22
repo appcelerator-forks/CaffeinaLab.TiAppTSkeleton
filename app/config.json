@@ -1,0 +1,56 @@
+{
+  "global": {
+    "testflight": "",
+    "app": {
+      "itunes": "",
+    },
+    "tishadow": {
+      "timestamp": 0,
+    	"controller": "",
+    	"args": {}
+    },
+    "colors": {
+      "background": "",
+      "primary": "",
+      "secondary": "",
+    },
+    "fonts": {
+      "normal": "",
+      "light": "",
+      "bold": ""
+    },
+    "T":{
+      "auth":{
+        "facebook":{
+          "appid": "",
+          "permissions": [""]
+        }
+      },
+      "net": {
+        "base": "",
+        "timeout": 20000,
+        "useCache": true,
+        "usePingServer": false
+      },
+      "ga":{
+        "ua": ""
+      }
+    }
+  },
+  "env:development": {
+  },
+  "env:test": {
+  },
+  "env:production": {
+  },
+  "os:android": {},
+  "os:blackberry": {},
+  "os:ios": {},
+  "os:mobileweb": {},
+  "dependencies": {
+    "com.caffeinalab.titanium.loader": "*",
+    "com.caffeinalab.titanium.modalwindow": "*",
+    "com.caffeinalab.titanium.notifications": "*",
+    "com.caffeinalab.titanium.sharer": "*"
+  }
+}
