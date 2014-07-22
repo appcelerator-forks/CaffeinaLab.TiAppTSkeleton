@@ -2,7 +2,7 @@
   "global": {
     "testflight": "",
     "app": {
-      "itunes": "",
+      "itunes": ""
     },
     "tishadow": {
       "timestamp": 0,
@@ -12,7 +12,7 @@
     "colors": {
       "background": "",
       "primary": "",
-      "secondary": "",
+      "secondary": ""
     },
     "fonts": {
       "normal": "",
